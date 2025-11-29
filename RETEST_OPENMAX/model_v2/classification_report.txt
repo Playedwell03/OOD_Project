@@ -1,0 +1,11 @@
+                precision    recall  f1-score   support
+
+     crackdown       0.84      1.00      0.91        16
+     crossline       0.87      0.81      0.84        16
+        danger       1.00      1.00      1.00        16
+kidprotectzone       1.00      0.88      0.93        16
+     leftcurve       1.00      1.00      1.00        16
+
+      accuracy                           0.94        80
+     macro avg       0.94      0.94      0.94        80
+  weighted avg       0.94      0.94      0.94        80
