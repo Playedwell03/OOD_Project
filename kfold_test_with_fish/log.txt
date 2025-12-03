@@ -1,0 +1,78 @@
+--- Creating Dataset: run_1_test (Test on fold 01) ---
+  Copying Train folds: [2, 3, 4, 5, 6, 7, 8, 9] -> run_1_test/train/
+  Copying Valid fold:  [10] -> run_1_test/valid/
+  Copying Test fold:   [1] -> run_1_test/test/
+  -> Dataset 'run_1_test' 생성 완료.
+
+--- Creating Dataset: run_2_test (Test on fold 02) ---
+  Copying Train folds: [3, 4, 5, 6, 7, 8, 9, 10] -> run_2_test/train/
+  Copying Valid fold:  [1] -> run_2_test/valid/
+  Copying Test fold:   [2] -> run_2_test/test/
+  -> Dataset 'run_2_test' 생성 완료.
+
+--- Creating Dataset: run_3_test (Test on fold 03) ---
+  Copying Train folds: [1, 4, 5, 6, 7, 8, 9, 10] -> run_3_test/train/
+  Copying Valid fold:  [2] -> run_3_test/valid/
+  Copying Test fold:   [3] -> run_3_test/test/
+  -> Dataset 'run_3_test' 생성 완료.
+
+--- Creating Dataset: run_4_test (Test on fold 04) ---
+  Copying Train folds: [1, 2, 5, 6, 7, 8, 9, 10] -> run_4_test/train/
+  Copying Valid fold:  [3] -> run_4_test/valid/
+  Copying Test fold:   [4] -> run_4_test/test/
+  -> Dataset 'run_4_test' 생성 완료.
+
+--- Creating Dataset: run_5_test (Test on fold 05) ---
+  Copying Train folds: [1, 2, 3, 6, 7, 8, 9, 10] -> run_5_test/train/
+  Copying Valid fold:  [4] -> run_5_test/valid/
+  Copying Test fold:   [5] -> run_5_test/test/
+  -> Dataset 'run_5_test' 생성 완료.
+
+--- Creating Dataset: run_6_test (Test on fold 06) ---
+  Copying Train folds: [1, 2, 3, 4, 7, 8, 9, 10] -> run_6_test/train/
+  Copying Valid fold:  [5] -> run_6_test/valid/
+  Copying Test fold:   [6] -> run_6_test/test/
+  -> Dataset 'run_6_test' 생성 완료.
+
+--- Creating Dataset: run_7_test (Test on fold 07) ---
+  Copying Train folds: [1, 2, 3, 4, 5, 8, 9, 10] -> run_7_test/train/
+  Copying Valid fold:  [6] -> run_7_test/valid/
+  Copying Test fold:   [7] -> run_7_test/test/
+  -> Dataset 'run_7_test' 생성 완료.
+
+--- Creating Dataset: run_8_test (Test on fold 08) ---
+  Copying Train folds: [1, 2, 3, 4, 5, 6, 9, 10] -> run_8_test/train/
+  Copying Valid fold:  [7] -> run_8_test/valid/
+  Copying Test fold:   [8] -> run_8_test/test/
+  -> Dataset 'run_8_test' 생성 완료.
+
+--- Creating Dataset: run_9_test (Test on fold 09) ---
+  Copying Train folds: [1, 2, 3, 4, 5, 6, 7, 10] -> run_9_test/train/
+  Copying Valid fold:  [8] -> run_9_test/valid/
+  Copying Test fold:   [9] -> run_9_test/test/
+  -> Dataset 'run_9_test' 생성 완료.
+
+--- Creating Dataset: run_10_test (Test on fold 10) ---
+  Copying Train folds: [1, 2, 3, 4, 5, 6, 7, 8] -> run_10_test/train/
+  Copying Valid fold:  [9] -> run_10_test/valid/
+  Copying Test fold:   [10] -> run_10_test/test/
+  -> Dataset 'run_10_test' 생성 완료.
+  
+  쓰레기 첨가_A 문서 참고.
+
+OOD 30%일 때 가장 평가가 잘 나온것에 대해 연구하기 위한 프로젝트.
+
+------------------------------------------------------------------------------------------
+
+데이터셋을 10분할 한 뒤 무작위로 섞어 9개를 합쳐 train셋으로, 1개를 test 셋으로 사용.
+데이터셋 10개 생성되고, 각각의 데이터셋의 train의 OOD를 30%가 되게끔 함.
+
+학습 -> 평가 후 평가 지표에 대해서 평균값들 계산 예정.
+
+쓰레기 첨가_A에서의 OOD 30% 결과값과 비슷하다면 OOD가 일반화에 도움이 되었다는 결론 도출 가능.
+
+------------------------------------------------------------------------------------------
+
+기존셋 말고 또 다른 국내 교통 표지판 데이터셋 구하여 test로 쓰는 방식 고려중.
+이것도 결과값이 비슷하다면, 일반화 기여.
+
