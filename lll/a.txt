@@ -1,0 +1,12 @@
+각 클래스마다 각기 다른 쓰레기 데이터셋을 할당하는 방식으로 성능실험 진행.
+이 때의 쓰레기 데이터는 검증된 데이터셋인 COCO 데이터셋 이용.
+
+너무 커서 해당 코드로 1기가 크기의 데이터셋만 받음.
+# 이미지 (1GB)
+wget http://images.cocodataset.org/zips/val2017.zip
+unzip val2017.zip -d ./coco
+
+# 라벨 (241MB)
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+unzip annotations_trainval2017.zip -d ./coco
+
